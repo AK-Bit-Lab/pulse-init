@@ -29,17 +29,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
-          cache-dependency-path: |
-            pulse-growth-bot/package-lock.json
-            pulse-starter-app/package-lock.json
 
       - name: Install and run growth bot
         working-directory: ./pulse-growth-bot
         run: |
           for i in {1..10}; do
             echo "Growth bot iteration $i/10"
-            npm ci
+            npm install
             npm run start
           done
 
@@ -48,6 +44,6 @@ jobs:
         run: |
           for i in {1..10}; do
             echo "Starter app iteration $i/10"
-            npm ci
+            npm install
             npm run start
           done
