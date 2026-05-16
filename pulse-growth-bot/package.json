@@ -1,0 +1,15 @@
+{
+  "name": "pulse-growth-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@bamzzstudio/loka-sdk": "^0.1.1",
+    "@bamzzstudio/auralis-sdk": "^0.1.5",
+    "@bamzzstudio/minimarket-escrow-sdk": "^0.1.0",
+    "@bamzzstudio/cforge-sdk": "^0.1.0"
+  }
+}
